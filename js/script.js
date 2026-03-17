@@ -1,13 +1,22 @@
-const threeDotPost = document.querySelector(".three-dot-post");
-const threeDotClick = document.querySelector(".three-dot-click");
+let activeDropdown = null;
 
-if (threeDotPost && threeDotClick) {
-  threeDotPost.addEventListener("click", (e) => {
+document.querySelectorAll(".three-dot-post").forEach((dot) => {
+  dot.addEventListener("click", (e) => {
     e.stopPropagation();
-    threeDotClick.classList.toggle("active");
-  });
+    const dropdown = dot.querySelector(".three-dot-click");
 
-  document.addEventListener("click", () => {
-    threeDotClick.classList.remove("active");
+    if (activeDropdown && activeDropdown !== dropdown) {
+      activeDropdown.classList.remove("active");
+    }
+
+    dropdown.classList.toggle("active");
+    activeDropdown = dropdown.classList.contains("active") ? dropdown : null;
   });
-}
+});
+
+document.addEventListener("click", () => {
+  if (activeDropdown) {
+    activeDropdown.classList.remove("active");
+    activeDropdown = null;
+  }
+});
