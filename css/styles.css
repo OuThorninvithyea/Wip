@@ -102,7 +102,7 @@ select {
 }
 
 .btn-not-active{
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .hover-btn-opacity:hover {
@@ -423,6 +423,10 @@ select {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+}
+
+.like-btn:hover {
+  color: oklch(0.637 0.237 25.331);
 }
 
 .like-btn svg {
