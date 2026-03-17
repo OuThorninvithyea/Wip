@@ -256,6 +256,7 @@ select {
 }
 
 .three-dot-post svg {
+  position: relative;
   opacity: 0.3;
   width: 32px;
   height: 32px;
@@ -268,6 +269,33 @@ select {
 .three-dot-post svg:hover {
  background-color:   oklch(0.87 0 0);
 
+}
+
+.three-dot-click  {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  top: 10;
+  right: 70;
+  background-color: var(--color-background);
+  border-radius: 12px;
+}
+
+.three-dot-click.active {
+  display: flex;
+}
+
+.mute,.smiliar-tool,.share,.report {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.mute svg,.smiliar-tool svg ,.share svg,.report svg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
 }
 
 .post-body{
