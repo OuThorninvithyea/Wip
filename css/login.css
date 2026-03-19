@@ -1,0 +1,107 @@
+.main {
+    display: flex;
+}
+
+.login-container {
+    padding: 16px;
+    font-size: 18px;
+    width: 681px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid var(--color-border);
+}
+
+.login-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.login-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.login-btns svg{
+    width: 20px;
+    height: 20px;
+}
+
+.login-btns a {
+    text-decoration: none;
+    border-radius: 8px;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    background-color: oklab(0.623 -0.0378409 -0.210628);
+    width: 100%;
+    opacity: 0.9;
+}
+
+.login-btns a:hover {
+    opacity: 1    
+}
+
+.login-btns a:first-child{
+    background-color: oklch(0.541 0.281 293.009);
+}
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.login-inputs input {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid var(--color-border);
+}
+
+.login-inputs a {
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-inputs a:hover {
+    opacity: 0.9;
+
+}
+
+.or{
+    font-size: 16px;
+    margin: 16px 0px 16px 0px;
+    color: oklch(0.556 0 0);
+}
+
+.forgot-password {
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: normal;
+    margin: 16px 0px 0px 0px;
+    color: oklch(0.556 0 0);
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}

@@ -110,10 +110,14 @@ select {
   cursor: pointer;
 }
 
+.text-underline:hover{
+  margin-right: none;
+  text-decoration: underline;
+}
+
 .main-container {
   display: flex;
   flex-direction: row;
-
 }
 
 .main {
@@ -172,6 +176,7 @@ select {
 .side-nav svg {
   width: 28px;
   height: 28px;
+  color: black;
 }
 
 .join-member {
@@ -211,7 +216,9 @@ select {
 }
 
 .post {
+  border-bottom: none;
   display: flex;
+  flex: 1;
   justify-content: space-between;
   flex-direction: column;
   padding: 16px 0px 16px 0px;
@@ -229,6 +236,7 @@ select {
 }
 
 .profile-content {
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -236,8 +244,94 @@ select {
 }
 
 .profil {
+  position: relative;
   width: 40px;
   height: 40px;
+}
+
+.pf-hover {
+  display: none;
+  width: 288px;
+  position: absolute;
+  top: 60px;
+  left: -65%;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 16px;
+  z-index: 100000000000000000;
+}
+
+.profil:hover + .pf-hover,
+.pf-hover:hover {
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-hover::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 100%;
+  height: 20px;
+}
+
+.pf-hover-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pf-hover-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.follow-btn {
+  font-weight: 700;
+  background-color: #000000;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  padding: 8px 16px 8px 16px;
+  border-radius: var(--border-radius-pill);
+}
+
+.follow-btn:hover {
+  cursor: default;
+  opacity: 0.8;
+}
+
+.pf-hover-name > .name {
+  display: flex;
+  align-items: start;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pf-hover-name > .name .pro-lable {
+  margin-left: 5px;
+}
+
+.pf-hover-name > .bio {
+  color:oklch(0.556 0 0);
+  line-height: 20px;
+}
+
+.pf-hover-body {
+  display: flex;
+  flex-direction: column;
+  text-wrap: wrap;
+}
+
+.pf-hover-body span a {
+  color: #0066ff;
 }
 
 .profil img {
@@ -511,6 +605,8 @@ select {
 }
 
 .join-now {
+  font-size: 16px;
+  height: 40px;
   font-weight: 600;
   background-color: var(--color-text-primary);
   color: var(--color-white);
@@ -607,16 +703,122 @@ select {
 }
 
 .streak-lable {
+  font-size: 12px;
   color: #7c2d12;
+  display: flex;
+  align-items: center;
+  height: 24px;
   background-color: #ffedd5;
   padding: 4px 8px 4px 8px;
   border-radius: 50px;
 }
 
-.footer {
-  display: flex;
+.btn-nav {
+  position: sticky;
+  bottom: 0;
+  height: 100%;
+  display: none;
   flex-direction: row;
   justify-content: space-evenly;
+  background-color: var(--btn-primary-bg);
+  border-top: 1px solid var(--color-border);
+  padding: 8px;
+}
+
+.btn-nav svg {
+  width: 28px;
+  height: 28px;
+}
+
+.pop-up-background {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+
+.pop-up {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 330px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 32px 32px 40px 32px;
+}
+
+.pop-logo-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.pop-logo-header img {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--border-radius);
+}
+
+.pop-logo-header span {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.pop-logo-title {
+  text-align: center;
+  line-height: 35px;
+}
+
+.pop-logo-title h3 {
+  font-size: 48px;
+}
+
+.pop-logo-body{
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pop-logo-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.member-info-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-info-img img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.sidebar-invinsible {
+    width: 341px;
 }
 
 @media (max-width: 768px) {
@@ -627,5 +829,10 @@ select {
 @media (max-width: 639px) {
   .sidebar {
     display: none;
+  }
+  .btn-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 } 
