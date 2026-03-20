@@ -4,7 +4,7 @@
   --color-primary: #FADC00;
   --color-accent: #FFF6DB;
   --color-background: #E5E5E5;
-  --color-text-primary: #000000;
+  --color-text-primary: oklch(0% 0 0);
   --color-link: #FFF6DB;
   --color-white: #FFFFFF;
   --color-gray-400: #404040;
@@ -165,7 +165,7 @@ select {
   flex-direction: column;
 }
 
-.home, .notifications, .email, .calander, .task, .video, .search, .three-do {
+.home, .notifications, .email, .posts, .pro, .video, .search, .three-do {
   padding: 8px 12px 8px 12px;
   display: flex;
   justify-content: center;
@@ -186,14 +186,27 @@ select {
 }
 
 .join {
+  cursor: pointer;
   font-weight: 500;
   font-size: 14px;
   border-radius: 12px;
+  color: var(--color-text-primary);
   background-color: var(--color-primary);
 }
 
+.join:hover {
+  text-decoration: none;
+  background-color: #f1d60b;
+
+}
+
 .join,.acces-key {
+  cursor: pointer;
   padding: 8px 12px 8px 12px;
+}
+
+.acces-key:hover {
+  background-color: oklch(0.87 0 0);
 }
 
 .acces-key {
@@ -205,6 +218,7 @@ select {
 }
 
 .acces-key svg {
+  color: oklch(0.269 0 0);
   width: 20px;
   height: 20px;
 }
@@ -218,7 +232,6 @@ select {
 .post {
   border-bottom: none;
   display: flex;
-  flex: 1;
   justify-content: space-between;
   flex-direction: column;
   padding: 16px 0px 16px 0px;
@@ -434,8 +447,8 @@ select {
 }
 
 .post-text {
-  width: Z;
   gap: 10px;
+  color: var(--color-text-primary);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -725,6 +738,10 @@ select {
   padding: 8px;
 }
 
+.btn-nav a {
+  color: var(--color-text-primary);
+}
+
 .btn-nav svg {
   width: 28px;
   height: 28px;
@@ -814,7 +831,7 @@ select {
 .member-info-img img {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+  border-radius: 50%; 
 }
 
 .sidebar-invinsible {
