@@ -12,7 +12,7 @@
 
 .main-left {
     width: 380px; 
-    gap: 85px;
+    gap: 220px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -80,8 +80,8 @@
 
 .pro-deal-card{
     position: absolute;
-    top: 30%;
-    right: 55%;
+    top: 25%;
+    right: 54.2%;
     width: 412px;
     display: flex;
     flex-direction: column;
@@ -131,9 +131,9 @@
 
 .save-deal{
     padding: 1px 6px;
-    background-color: #24b47e;
+    background-color: #38ffb6;
     border-radius: 6px;
-    color: #176b4c;
+    color: #0e6245;
 }
 
 .toggle {
@@ -199,4 +199,34 @@
 
 .sub-fill-in {
     width: 380px;   
+}
+
+.border-sperate {
+    width: 100%;
+    height: 1px;
+    padding: 16px;
+    background-color: var(--color-border);
+}
+
+.totals {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sub-total {
+    border-top: 1px solid var(--color-border);
+    padding: 16px 0px 16px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.total-due {
+    border-top: 1px solid var(--color-border);
+    padding: 16px 0px 16px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
