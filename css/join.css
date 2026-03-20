@@ -6,11 +6,12 @@
     flex-direction: row;
     align-items: start;
     margin-top: 3.2%;
-    gap: 130px;
+    gap: 158px;
     justify-content: center;
 }
 
 .main-left {
+    width: 380px; 
     gap: 85px;
     display: flex;
     flex-direction: column;
@@ -19,8 +20,6 @@
 }
 
 .subscriptions-overview{
-    font-weight: 400;
-    font-size: 14px;
     display: flex;
     gap: 30px;
     flex-direction: column;
@@ -34,13 +33,21 @@
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
-.sub-overview-header{
+.sub-overview-header a  {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-text);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 8px;
 }
+
+.sub-overview-header a:hover{
+    text-decoration: none;
+}
+    
 
 .sub-price-info {
     display: flex;
@@ -72,6 +79,9 @@
 }
 
 .pro-deal-card{
+    position: absolute;
+    top: 30%;
+    right: 55%;
     width: 412px;
     display: flex;
     flex-direction: column;
