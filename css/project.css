@@ -1,0 +1,127 @@
+
+.post-contents {
+    border: 1px solid var(--color-border);
+}
+
+.search-post-page {
+    border: none;
+}
+
+.post-contents-switch-bar-btn{
+    border: none;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f6e4;
+    border-radius: 12px ;
+    border: 2px solid transparent;
+}
+
+.project:hover {
+    border: 2px solid var(--color-text-primary);
+    cursor: pointer;
+}
+
+.dark-yellow {
+    background-color: #fff6db;
+}
+.light-pink {
+    background-color: #ffeadb;
+}
+.hard-pink {
+    background-color: #ffdedb;
+}
+.hard-gray {
+    background-color: #eeedec;
+}
+
+.purple {
+    background-color: #dbe7ff;
+}
+.blue-gray {
+    background-color: #dbf3ff;
+}
+.blue-sky {
+    background-color: #dbffff;
+}
+.light-green {
+    background-color: #dbe4ff
+}
+
+.project-header {
+    width: 100%;
+    padding: 16px;
+    height: 82px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-details {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.project-header-title {
+    height: 25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.project-header-dec {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.project-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-img img {
+    width: 48px;
+    height: 48px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.project-footer {
+    width: 100%;
+    border-top: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 8px 16px 8px 16px;
+}
+
+.project-footer-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.project-footer-dec {
+    font-size: 16px;
+}
+
+.project-pf {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.project-pf img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}

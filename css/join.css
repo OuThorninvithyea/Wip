@@ -104,6 +104,7 @@
 }
 
 .pro-deal-card{
+    font-weight: 400;
     width: 412px;
     display: flex;
     flex-direction: column;
@@ -111,21 +112,31 @@
     align-items: flex-start;
     background-color: var(--color-white);
     border: 1px solid var(--color-border);
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
 .pro-deal-title {
     width: 100%;
     padding: 16px;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column; 
+}
+
+.pro-deal-title p {
+    font-size: 12px;
+    color: #a0a0a0;
 }
 
 .pro-deal-info {
+ font-size: 14px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.pro-deal-info h4{
+     font-weight: 400;
 }
 
 .pro-deal-benefits {
@@ -137,8 +148,8 @@
     align-items: center;
     gap: 5px;
     padding: 16px;
-    background-color: oklch(0.97 0 0);
-    border-radius: 12px;
+    background-color: #1a1a1a0d;
+    border-radius: 6px;
     border-top: 1px solid var(--color-border);
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
@@ -153,7 +164,7 @@
 
 .save-deal{
     padding: 1px 6px;
-    background-color: #38ffb6;
+    background-color: #cbf4c9;
     border-radius: 6px;
     color: #0e6245;
 }
@@ -252,8 +263,8 @@
     flex-direction: row;
     justify-content: space-between;
     font-size: 16px;
-    font-weight: 600;
-    color: #1a1a1a;
+    font-weight: 400;
+    color: #1a1a1a; 
 }
 
 .fill-in-header {
@@ -557,6 +568,11 @@
     margin-top: 16px;
 }
 
+.power-left {
+    border-right: 1px solid #e0e0e0;
+    padding-right: 16px;
+}
+
 .power-left span {
     display: flex;
     align-items: center;
@@ -564,7 +580,7 @@
 }
 
 .power-left strong {
-    color: #6772e5;
+    color: #a0a0a0;
     font-size: 14px;
 }
 

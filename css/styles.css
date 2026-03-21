@@ -869,11 +869,19 @@ select {
   .right-side-bar {
     display: none;
   }
+  .post-contents {
+    width: 100%;
+  }
 }
 @media (max-width: 639px) {
   .sidebar {
     display: none;
   }
+
+  .post-contents {
+    width: 100%;
+  }
+
   .btn-nav {
     display: flex;
     flex-direction: row;

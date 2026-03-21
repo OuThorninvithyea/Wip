@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: center;
     background-color: #f5f5f5;
-    border-radius: 6px;
+    border-radius: 4px;
     border: none;
 }
 
@@ -51,7 +51,7 @@
     border-bottom: none;
     
 }
-.post-contents-switch-bar-btn div {
+.post-contents-switch-bar-btn a {
     padding: 12px;
     width: 100%;
     text-align: center;
@@ -61,8 +61,9 @@
     border-bottom: 3px solid transparent;
 }
 
-.post-contents-switch-bar-btn div:hover {
+.post-contents-switch-bar-btn a:hover {
     background-color: oklch(0.269 0 0 / 0.05);
+    text-decoration: none;
 }
 
 .post-contents-switch-bar-btn .active-tap {
@@ -113,5 +114,6 @@
 }
 
 .search-ops-title  {
+    font-family: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
     font-weight: bold;
 }
