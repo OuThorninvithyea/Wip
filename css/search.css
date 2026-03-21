@@ -65,6 +65,22 @@
     background-color: oklch(0.269 0 0 / 0.05);
 }
 
+.post-contents-switch-bar-btn .active-tap {
+    color: var(--color-text-primary);
+    border-bottom: 3px solid #404040;
+}
+
+.post-contents-switch-bar-btn .not-active {
+    color: #404040;
+    border-bottom: 3px solid transparent;
+}
+
+.not-active:focus {
+    color: var(--color-text-primary);
+    border-bottom: 3px solid #404040;
+    outline: none;
+}
+
 .active-tap:active {
     color: #404040;
     border-bottom: none;

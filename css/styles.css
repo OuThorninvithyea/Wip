@@ -359,15 +359,22 @@ select {
 }
 
 .name{
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  align-items: center;
   font-weight: 500;
   font-size: 16px;
 }
 
 .pro-lable {
   padding: 2px 3px 2px 3px;
-  display: inline-flex;
+  height: 13.59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 9.6px;
-  border-radius: 6px;
+  border-radius: 3px;
   background-color: oklch(0.902 0.063 306.703);
   color:  oklch(0.496 0.265 301.924);
 }
@@ -455,7 +462,8 @@ select {
   align-items: stretch;
 }
 
-.post-text img{
+.post-text > img,
+.post-text .lable > img {
   width: 20px;
   height: 20px;
   border-radius: 2px;
@@ -494,10 +502,29 @@ select {
   justify-content: center;
   align-items: center;
   border-radius: 3px;
+  position: relative;
 }
 
 .lable a {
   color: inherit;
+}
+
+.lable .pf-hover {
+  color: var(--color-text-primary);
+  font-size: var(--font-size-base);
+  font-weight: normal;
+  top: 30px;
+}
+
+.lable .pf-hover::before {
+  top: -10px;
+  height: 10px;
+}
+
+.lable:hover .pf-hover,
+.lable .pf-hover:hover {
+  display: flex;
+  flex-direction: column;
 }
 
 .verify svg {

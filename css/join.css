@@ -1,29 +1,54 @@
 
 .main{
     width: 100%;
-    height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+    margin: 0;
+    min-height: 100vh;
     display: flex;
     flex-direction: row;
-    align-items: start;
-    margin-top: 3.2%;
-    gap: 158px;
+    align-items: stretch;
     justify-content: center;
+    gap: 0;
 }
 
 .main-left {
-    width: 380px; 
-    gap: 220px;
+    position: relative;
+    width: 50%;
+    padding: 78px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.main-left > * {
+    width: 100%;
+    max-width: 380px;
+}
+
+.main-left > .pro-deal-card {
+    max-width: 412px;
+}
+
+.main-right {
+    width: 50%;
+    padding: 78px;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    gap: 0;
+    filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
 }
 
 .subscriptions-overview{
     display: flex;
-    gap: 30px;
+    gap: 24px;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 32px;
 }
 
 .subscriptions-overview img {
@@ -34,9 +59,9 @@
 }
 
 .sub-overview-header a  {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 14px;
-    color: var(--color-text);
+    color: #1a1a1a;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -79,9 +104,6 @@
 }
 
 .pro-deal-card{
-    position: absolute;
-    top: 25%;
-    right: 54.2%;
     width: 412px;
     display: flex;
     flex-direction: column;
@@ -189,16 +211,13 @@
     border: 1px solid #24b47e;
 }
 
-.main-right {
-    width: 380px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* .main-right is defined above with the layout */
 
 .sub-fill-in {
-    width: 380px;   
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
 }
 
 .border-sperate {
@@ -212,21 +231,384 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0;
+    margin-top: 32px;
 }
 
 .sub-total {
-    border-top: 1px solid var(--color-border);
-    padding: 16px 0px 16px 0px;
+    border-top: 1px solid #e0e0e0;
+    padding: 16px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 14px;
+    color: #4a4a4a;
 }
 
 .total-due {
-    border-top: 1px solid var(--color-border);
-    padding: 16px 0px 16px 0px;
+    border-top: 1px solid #e0e0e0;
+    padding: 16px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.fill-in-header {
+    padding: 0px 0px 12px 0px;
+}
+
+.fill-in-header h4, .fill-in-payment h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.fill-in-payment {
+    padding: 24px 0px 12px 0px;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.email-input label, .stripe-card-group label, .input-group label {
+    color: #4a4a4a;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.email-input input, .input-group input, .input-group select {
+    font-size: 14px;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    width: 100%;
+    outline: none;
+    background-color: #fff;
+    color: #1a1a1a;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.email-input input::placeholder, .input-group input::placeholder, .stripe-card-top input::placeholder, .stripe-card-bottom input::placeholder {
+    color: #a0a0a0;
+    
+}
+
+.email-input input:focus, .input-group input:focus, .input-group select:focus {
+    border-color: #0066ff;
+    border: none;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 0 2.5px rgba(0, 102, 255, 0.4);
+}
+
+.payment-fill-info {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    flex-direction: column;
+    margin-bottom: 16px;
+    background-color: #fff;
+}
+
+.payment-type {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 16px;
+    gap: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    font-weight: 500;
+    font-size: 14px;
+    color: #1a1a1a;
+    border-bottom: none;
+}
+
+.payment-type svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-info {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+}
+
+.stripe-card-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.stripe-card-box {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.stripe-card-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.stripe-card-top input {
+    border: none !important;
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.stripe-card-top input:focus,
+.card-year:focus,
+.card-cvc:focus {
+    box-shadow: 0 0 0 2.5px rgba(0, 102, 255, 0.4);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 0px;
+}
+
+.stripe-card-top input:focus,
+.card-cvc:focus {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 6px;
+}
+ 
+.stripe-card-top input#card-num:focus {
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+
+.card-type-icons {
+    position: absolute;
+    right: 12px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.card-type-icons img {
+    height: 16px;
+}
+
+.stripe-card-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.card-year {
+    width: 50%;
+    border: none !important;
+    border-right: 1px solid #e0e0e0 !important;
+    padding: 12px;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.cvc-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.card-cvc {
+    width: 100%;
+    border: none !important;
+    padding: 12px;
+    outline: none;
+    font-size: 14px;
+    background: transparent;
+}
+
+.cvc-container svg {
+    position: absolute;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+    stroke: #888;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+
+.input-group select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="%231a1a1a" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 32px;
+}
+
+.sub-fill-in-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 380px;
+}
+
+.save-info-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 12px 14px;
+    background-color: #fff;
+}
+
+.terms-card {
+    padding: 0 4px;
+}
+
+.custom-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.custom-checkbox input {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    accent-color: #000;
+}
+
+.checkbox-text p {
+    margin: 0;
+}
+
+.cb-title {
+    font-weight: 500;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.cb-desc {
+    color: #666;
+    font-size: 13px;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+.cb-desc a {
+    color: #666;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.cb-desc span {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    color: #666;
+}
+
+.subscribe-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #000000;
+    color: var(--color-white);
+    padding: 16px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: background-color 0.15s;
+}
+
+.subscribe-btn:hover {
+    background-color: #333;
+}
+
+.sub-description {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+}
+
+.power-by-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-size: 12px;
+    color: #888;
+    margin-top: 16px;
+}
+
+.power-left span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.power-left strong {
+    color: #6772e5;
+    font-size: 14px;
+}
+
+.power-right {
+    display: flex;
+    gap: 12px;
+}
+
+.power-right a {
+    color: #888;
+    text-decoration: none;
+}
+
+.power-right a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+    .main {
+        margin-top: 15px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-right {
+        filter: none;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-left {
+        width: 100%;
+        max-width: 380px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .sub-price-info {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        justify-content: center;
+    }
+    .sub-price-info span{
+        text-wrap: nowrap;
+    }
 }

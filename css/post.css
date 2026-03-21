@@ -9,7 +9,11 @@
     font-size: 16px;
 }
 
-.post-contents-switch-bar-btn div {
+.post-contents-switch-bar-btn a {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     font-weight: 500;
     padding: 12px;
     cursor: pointer;
@@ -17,13 +21,30 @@
     border-bottom: 3px solid transparent;
 }
 
-.post-contents-switch-bar-btn div:hover {
-    background-color: oklch(0.269 0 0 / 0.05);                                             
+.post-contents-switch-bar-btn a:hover {
+    background-color: oklch(0.269 0 0 / 0.05);
+    text-decoration: none;
 }
 
- .active-tap:active {   
-    color: #404040;   
-    border-bottom: none;                                            
+ .post-contents-switch-bar-btn .active-tap {
+    color: var(--color-text-primary);
+    border-bottom: 3px solid #404040;
+ }
+
+ .post-contents-switch-bar-btn .not-active {
+    color: #404040;
+    border-bottom: 3px solid transparent;
+ }
+
+ .not-active:focus {
+    color: var(--color-text-primary);
+    border-bottom: 3px solid #404040;
+    outline: none;
+ }
+
+ .active-tap:active {
+    color: #404040;
+    border-bottom: none;
  }
 
  .active-tap:focus {
