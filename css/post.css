@@ -107,6 +107,10 @@
     display: flex;
 }
 
+.post-lable h3 {
+    font-weight: 650;
+}
+
 .post-footer {
     display: flex;
     padding-left: 16px;

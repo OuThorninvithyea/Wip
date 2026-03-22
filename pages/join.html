@@ -22,8 +22,11 @@
                     <div class="sub-price-info-header">
                         <h4>Subscribe to WIP Pro Membership</h4>
                     </div>
-                    <div class="sub-price">
+                    <div class="sub-price" id="main-price">
                         $29.00 <span>per month</span>
+                    </div>
+                    <div class="sub-price-discount" id="discount-info">
+                        <p> <span>US$29.00</span> US$16.58 / month billed annually</p>
                     </div>
                 </div>
             </div>
@@ -38,7 +41,7 @@
                 <div class="pro-deal-benefits">
                     <div class="deal-benefit-left">
                     <label class="toggle">
-                        <input type="checkbox" checked>
+                        <input type="checkbox" id="billing-toggle">
                         <span class="toggle-slider"></span>
                     </label>
                     <span class="save-deal">Save $149</span> 
@@ -52,11 +55,11 @@
             <div class="totals">
                 <div class="sub-total">
                     <p>Subtotal</p>
-                    <span>US$29.00</span>
+                    <span id="sub-total-val">US$29.00</span>
                 </div>
                 <div class="total-due">
                     <p>Total due today</p>
-                    <span>US$29.00</span>
+                    <span id="total-due-val">US$29.00</span>
                 </div>
             </div>
         </div>
@@ -163,5 +166,6 @@
         </div>
         </div>  
     </div>
+    <script src="../js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,14 @@
+.post-contents {
+    border: 1px solid var(--color-border);
+}
+.post-contents-switch-bar{
+    border-bottom: 2px solid var(--color-border);
+}
+
+.search-post-page {
+    border: none;
+}
+
+.post-contents-switch-bar-btn {
+    border: none;
+}

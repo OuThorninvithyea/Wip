@@ -22,6 +22,27 @@ document.addEventListener("click", () => {
   }
 });
 
+// Pop-up toggle
+const popUpBackground = document.querySelector(".pop-up-background");
+const joinNowBtn = document.querySelector(".join-now");
+const closeBtn = document.querySelector(".pop-up-close-btn");
+
+if (joinNowBtn && popUpBackground) {
+  joinNowBtn.addEventListener("click", () => {
+    popUpBackground.style.display = "block";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    popUpBackground.style.display = "none";
+  });
+
+  popUpBackground.addEventListener("click", (e) => {
+    if (e.target === popUpBackground) {
+      popUpBackground.style.display = "none";
+    }
+  });
+}
+
 likeBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
     const textNode = btn.childNodes[btn.childNodes.length - 1];
@@ -44,3 +65,36 @@ likeBtn.forEach((btn) => {
     textNode.textContent = " " + count;
   });
 });
+
+// Billing Toggle Logic for Join Page
+const billingToggle = document.getElementById('billing-toggle');
+if (billingToggle) {
+    const discountInfo = document.getElementById('discount-info');
+    const mainPrice = document.getElementById('main-price');
+    const subTotalVal = document.getElementById('sub-total-val');
+    const totalDueVal = document.getElementById('total-due-val');
+    const proDealBenefits = document.querySelector('.pro-deal-benefits');
+
+    function updatePricing() {
+        if (billingToggle.checked) {
+            // Annual billing
+            discountInfo.style.display = 'flex';
+            mainPrice.innerHTML = '$199.00 <span>per year</span>';
+            subTotalVal.innerText = 'US$199.00';
+            totalDueVal.innerText = 'US$199.00';
+            if (proDealBenefits) proDealBenefits.classList.add('active');
+        } else {
+            // Monthly billing
+            discountInfo.style.display = 'none';
+            mainPrice.innerHTML = '$29.00 <span>per month</span>';
+            subTotalVal.innerText = 'US$29.00';
+            totalDueVal.innerText = 'US$29.00';
+            if (proDealBenefits) proDealBenefits.classList.remove('active');
+        }
+    }
+
+    billingToggle.addEventListener('change', updatePricing);
+    
+    // Initial state
+    updatePricing();
+}

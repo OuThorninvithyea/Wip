@@ -72,6 +72,20 @@
     border: 2px solid var(--color-border);
 }
 
+/*animation for outline*/
+@keyframes outlineAnimation{
+    0%, 80%{
+        outline-color: black;
+    }
+    100%{
+        outline-color: transparent;
+    }
+}
+.login-inputs input:focus-within{
+    outline: 2px solid transparent;
+    animation: outlineAnimation 0.2s steps(1) forwards;
+}
+
 .login-inputs a {
     background-color: black;
     color: white;
