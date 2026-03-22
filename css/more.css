@@ -1,5 +1,6 @@
 .more-container {
-    width: 681px;
+    width: 100%;
+    max-width: 681px;
     border: 1px solid var(--color-border);
 }
 
@@ -11,12 +12,13 @@
 }
 
 .more-box {
+    width: 100%;
     cursor: pointer;
     font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 195px;
+    max-width: 195px;
     height: 56px;
     background-color: #f5f5f5;
     border-radius: 12px;
@@ -32,4 +34,34 @@
     display: flex;
     padding: 32px;
     gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .right-side-bar {
+    display: none;
+  }
+  .post-contents {
+    width: 100%;
+  }
+}
+@media (max-width: 639px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar-invinsible {
+    display: none;
+  }
+
+  .btn-nav {
+    margin-top: 530px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }

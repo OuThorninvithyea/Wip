@@ -5,7 +5,8 @@
 .login-container {
     padding: 16px;
     font-size: 18px;
-    width: 681px;
+    width: 100%;
+    max-width: 681px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -119,3 +120,32 @@
 .forgot-password:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+  .right-side-bar {
+    display: none;
+  }
+  .post-contents {
+    width: 100%;
+  }
+}
+@media (max-width: 639px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+  .post-contents {
+    width: 100%;
+  }
+
+  .sidebar-invinsible {
+    display: none;
+  }
+
+  .btn-nav {
+    margin-top: 480px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }} 
