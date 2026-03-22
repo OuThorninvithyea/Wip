@@ -1,3 +1,4 @@
+/* Layout */
 .more-container {
     width: 100%;
     max-width: 681px;
@@ -35,7 +36,9 @@
     padding: 32px;
     gap: 16px;
 }
+/* Layout */
 
+/* Responsive */
 @media (max-width: 768px) {
   .right-side-bar {
     display: none;
@@ -65,3 +68,4 @@
     justify-content: space-evenly;
   }
 }
+/* Responsive */

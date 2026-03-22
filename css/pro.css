@@ -1,3 +1,4 @@
+/* Sidebar Overrides */
 .main-container {
     background-color: rgb(0, 0, 0);
 }
@@ -30,7 +31,9 @@
 .acces-key {
     background-color: black;
 }
+/* Sidebar Overrides */
 
+/* Upgrade Section */
 .upgrade-to-pro {
     display: flex;
     flex-direction: column;
@@ -80,7 +83,9 @@
 .pro-box-body p {
     color: oklch(0.827 0.119 306.383);
 }
+/* Upgrade Section */
 
+/* Pro Members */
 .pro-members {
     width: 100%;
     border: 1px solid oklch(0.269 0 0 / 0.8);
@@ -110,7 +115,9 @@
     height: 25px;
     border-radius: 50%;
 }
+/* Pro Members */
 
+/* Responsive */
 @media (max-width: 768px) {
     .right-side-bar {
         display: none;
@@ -163,3 +170,4 @@
         justify-content: space-evenly;
     }
 }
+/* Responsive */

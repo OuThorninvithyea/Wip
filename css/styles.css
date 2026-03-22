@@ -1,4 +1,4 @@
-
+/* Root Variables */
 :root {
   /* Colors */
   --color-primary: #FADC00;
@@ -32,6 +32,7 @@
   --btn-primary-border: #E5E5E5;
   --btn-primary-radius: 9999px;
 }
+/* Root Variables */
 
 /* Global Reset */
 *,
@@ -49,6 +50,7 @@ body {
   background-color: var(--color-white);
   line-height: 1.5;
 }
+/* Global Reset */
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
@@ -64,6 +66,7 @@ a {
 a:hover {
   text-decoration: underline;
 }
+/* Typography */
 
 /* Inputs */
 input,

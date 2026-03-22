@@ -1,3 +1,4 @@
+/* Layout */
 .main {
     display: flex;
 }
@@ -19,7 +20,9 @@
     font-weight: 700;
     margin-bottom: 32px;
 }
+/* Layout */
 
+/* Social Login Buttons */
 .login-btns {
     width: 100%;
     display: flex;
@@ -51,13 +54,15 @@
 }
 
 .login-btns a:hover {
-    opacity: 1    
+    opacity: 1
 }
 
 .login-btns a:first-child{
     background-color: oklch(0.541 0.281 293.009);
 }
+/* Social Login Buttons */
 
+/* Form Inputs */
 .login-inputs {
     display: flex;
     flex-direction: column;
@@ -120,7 +125,9 @@
 .forgot-password:hover {
     text-decoration: underline;
 }
+/* Form Inputs */
 
+/* Responsive */
 @media (max-width: 768px) {
   .right-side-bar {
     display: none;
@@ -148,4 +155,5 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  }} 
+  }}
+/* Responsive */

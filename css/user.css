@@ -1,3 +1,4 @@
+/* Layout Overrides */
 .post-contents {
     border: 1px solid var(--color-border);
 }
@@ -16,3 +17,4 @@
 .btn-nav {
     margin-top:785px;
 }
+/* Layout Overrides */
