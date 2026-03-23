@@ -809,6 +809,7 @@ select {
 
 /* Pop Up Overlay */
 .pop-up-background {
+  display: none;
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.8);
@@ -1037,6 +1038,18 @@ filter: brightness(0.9);
     display: none;
   }
   .post-contents {
+    width: 100%;
+  }
+  .pop-up {
+    width: 90vw;
+    height: auto;
+    padding: 24px;
+  }
+  .pop-ups-boxs {
+    width: 100%;
+    flex-direction: column;
+  }
+  .pop-up-box {
     width: 100%;
   }
 }
