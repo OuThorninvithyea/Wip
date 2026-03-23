@@ -20,7 +20,6 @@
     font-weight: 700;
     margin-bottom: 32px;
 }
-/* Layout */
 
 /* Social Login Buttons */
 .login-btns {
@@ -60,7 +59,6 @@
 .login-btns a:first-child{
     background-color: oklch(0.541 0.281 293.009);
 }
-/* Social Login Buttons */
 
 /* Form Inputs */
 .login-inputs {
@@ -125,7 +123,6 @@
 .forgot-password:hover {
     text-decoration: underline;
 }
-/* Form Inputs */
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -157,4 +154,3 @@
     justify-content: space-evenly;
   }
 }
-/* Responsive */

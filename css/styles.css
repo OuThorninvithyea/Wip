@@ -50,7 +50,6 @@ body {
   background-color: var(--color-white);
   line-height: 1.5;
 }
-/* Global Reset */
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
@@ -66,7 +65,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
-/* Typography */
 
 /* Inputs */
 input,
@@ -80,7 +78,6 @@ select {
   border-radius: var(--input-radius);
 
 }
-/* Inputs */
 
 /* Buttons*/
 .btn-primary {
@@ -109,7 +106,6 @@ select {
 .btn-not-active{
   opacity: 0.7;
 }
-/* Buttons*/
 
 .hover-btn-opacity:hover {
   opacity: 0.9;
@@ -133,8 +129,6 @@ select {
   flex-direction: row;
   justify-content: center;
 }
-
-/* Layout */
 
 /* Sidebar */
 .sidebar {
@@ -232,7 +226,6 @@ select {
   width: 20px;
   height: 20px;
 }
-/* Sidebar */
 
 /* Post */
 
@@ -554,6 +547,7 @@ select {
   height: 20px  
 }
 
+
 /* Post Footer */
 .post-footer {
   padding: 0 16px 0 66px;
@@ -606,6 +600,8 @@ select {
 .post-durations:hover {
     opacity: 1;
 }
+/* Post Footer */
+
 /* Post */
 
 /* Right Side Bar */
@@ -772,6 +768,7 @@ select {
   height: 25px;
   border-radius: 50%;
 }
+/* Streak Card */
 
 /* Right Side Bar */
 
@@ -785,7 +782,6 @@ select {
   padding: 4px 8px 4px 8px;
   border-radius: 50px;
 }
-/* Right Side Bar */
 
 /* Bottom Nav */
 .btn-nav {
@@ -808,7 +804,6 @@ select {
   width: 28px;
   height: 28px;
 }
-/* Bottom Nav */
 
 /* Pop Up */
 
@@ -1032,8 +1027,6 @@ filter: brightness(0.9);
   gap: 5px;
 }
 
-/* Pop Up */
-
 .sidebar-invinsible {
     width: 341px;
 }
@@ -1059,6 +1052,6 @@ filter: brightness(0.9);
   .btn-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 } 

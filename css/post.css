@@ -56,7 +56,6 @@
 .post-contents-switch-bar-btn-active {
     text-decoration: none;
 }
-/* Switch Bar */
 
 /* Post Cards */
 .post {
@@ -191,7 +190,6 @@
     font-weight: normal;
     opacity: 0.8;
 }
-/* Post Cards */
 
 /* Write Post */
 .write-post-btn {
@@ -223,7 +221,6 @@
     flex-direction: column;
     gap: 16px;
 }
-/* Write Post */
 
 /* Helpful Members */
 
@@ -335,7 +332,6 @@
     align-items: center;
     font-size: 12px;
 }
-/* Helpful Members */
 
 /* Browse By Categories */
 .browse-by {
@@ -370,4 +366,3 @@
     text-decoration: none;
     background-color: #f5f5f5;
 }
-/* Browse By Categories */

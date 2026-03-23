@@ -31,7 +31,6 @@
 .acces-key {
     background-color: black;
 }
-/* Sidebar Overrides */
 
 /* Upgrade Section */
 .upgrade-to-pro {
@@ -85,7 +84,6 @@
 .pro-box-body p {
     color: oklch(0.827 0.119 306.383);
 }
-/* Upgrade Section */
 
 /* Pro Members */
 .pro-members {
@@ -118,7 +116,6 @@
     height: 25px;
     border-radius: 50%;
 }
-/* Pro Members */
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -173,4 +170,3 @@
         justify-content: space-evenly;
     }
 }
-/* Responsive */

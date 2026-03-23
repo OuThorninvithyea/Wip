@@ -43,7 +43,6 @@
     gap: 0;
     filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
 }
-/* Layout */
 
 /* Subscription Overview */
 .subscriptions-overview{
@@ -118,7 +117,6 @@
 .sub-price-discount p span {
     text-decoration: line-through;
 }
-/* Subscription Overview */
 
 /* Pro Deal Card */
 .pro-deal-card{
@@ -272,9 +270,6 @@
     background-color: var(--color-white);
     border: 1px solid #24b47e;
 }
-/* Pro Deal Card */
-
-/* Form */
 
 /* Form Container */
 .sub-fill-in {
@@ -529,7 +524,6 @@
     background-position: right 12px center;
     padding-right: 32px;
 }
-/* Form */
 
 /* Footer */
 .sub-fill-in-footer {
@@ -663,6 +657,7 @@
 .power-right a:hover {
     text-decoration: underline;
 }
+
 /* Footer */
 
 /* Responsive */
@@ -733,4 +728,3 @@
         text-wrap: nowrap;
     }
 }
-/* Responsive */
