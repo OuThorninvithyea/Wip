@@ -136,13 +136,15 @@
 @media (max-width: 639px) {
 
     .main {
+        justify-content: space-between;
         flex-direction: column;
     }
-  .post-contents {
+  .empty-space-fake {
     width: 100%;
+    height: 100%;
   }
 
-  .sidebar-invinsible {
+  .sidebar-invisible {
     width: 100%;
     height: 100%;
   }

@@ -561,17 +561,15 @@
     accent-color: #000;
 }
 
-.checkbox-text p {
-    margin: 0;
-}
-
 .cb-title {
+    display: block;
     font-weight: 500;
     color: #1a1a1a;
     font-size: 14px;
 }
 
 .cb-desc {
+    display: block;
     color: #666;
     font-size: 13px;
     margin-top: 4px;
