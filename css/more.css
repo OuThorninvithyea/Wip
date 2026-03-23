@@ -53,18 +53,10 @@
 @media (max-width: 639px) {
 
     .main {
-      gap: 100px;
+      justify-content: space-between;
         flex-direction: column;
     }
 
-  .sidebar {
-    display: none;
-  }
-
-  .sidebar-invinsible {
-    width: 100%;
-    height: 100%;
-  }
 
   .empty-space-fake{
     height: 700px;

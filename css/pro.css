@@ -165,8 +165,19 @@
     }
 
     .btn-nav {
+        margin-top: 190px;
+        border-top: none;
+        background-color: black;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
+    }
+
+    .btn-nav svg {
+        color: white;
+    }
+    
+    .btn-nav a:hover {
+        background: none;
     }
 }

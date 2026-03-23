@@ -138,19 +138,18 @@
     .main {
         flex-direction: column;
     }
-
   .post-contents {
     width: 100%;
   }
 
   .sidebar-invinsible {
-    display: none;
+    width: 100%;
+    height: 100%;
   }
 
   .btn-nav {
-    margin-top: 480px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
