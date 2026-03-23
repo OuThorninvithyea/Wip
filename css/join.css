@@ -157,6 +157,7 @@
      font-weight: 400;
 }
 
+/* Deal Benefits Bar */
 .pro-deal-benefits {
     position: relative;
     width: 100%;
@@ -188,6 +189,7 @@
     animation: sweep 0.5s ease forwards;
 }
 
+/* Sweep Animation */
 @keyframes sweep{
     0%{
         clip-path: inset(0 100% 0 0);
@@ -217,6 +219,7 @@
     color: #0e6245;
 }
 
+/* Toggle Switch */
 .toggle {
     position: relative;
     display: inline-block;
@@ -272,11 +275,10 @@
 /* Pro Deal Card */
 
 /* Form */
-/* .main-right is defined above with the layout */
 
+/* Form Container */
 .sub-fill-in {
-    width: 100%;
-    max-width: 380px;
+    width: 380px;
     display: flex;
     flex-direction: column;
 }
@@ -288,6 +290,7 @@
     background-color: var(--color-border);
 }
 
+/* Totals */
 .totals {
     width: 100%;
     display: flex;
@@ -332,6 +335,7 @@
     padding: 24px 0px 12px 0px;
 }
 
+/* Email Input */
 .email-input {
     display: flex;
     flex-direction: column;
@@ -370,6 +374,7 @@
     box-shadow: 0 0 0 2.5px rgba(0, 102, 255, 0.4);
 }
 
+/* Payment Info */
 .payment-fill-info {
     display: flex;
     border: 1px solid #e0e0e0;
@@ -408,6 +413,7 @@
     color: #666;
 }
 
+/* Stripe Card Input */
 .stripe-card-group {
     display: flex;
     flex-direction: column;
@@ -509,6 +515,7 @@
     stroke: #888;
 }
 
+/* Cardholder & Region Inputs */
 .input-group {
     display: flex;
     flex-direction: column;
@@ -530,10 +537,10 @@
     flex-direction: column;
     gap: 16px;
     margin-top: 8px;
-    width: 100%;
-    max-width: 380px;
+    width: 380px;
 }
 
+/* Save Info Checkbox */
 .save-info-card {
     border: 1px solid #e0e0e0;
     border-radius: 6px;
@@ -545,6 +552,7 @@
     padding: 0 4px;
 }
 
+/* Custom Checkbox */
 .custom-checkbox {
     display: flex;
     align-items: flex-start;
@@ -588,6 +596,7 @@
     color: #666;
 }
 
+/* Subscribe Button */
 .subscribe-btn {
     display: flex;
     justify-content: center;
@@ -614,6 +623,7 @@
     text-align: center;
 }
 
+/* Powered By Stripe */
 .power-by-footer {
     display: flex;
     justify-content: center;

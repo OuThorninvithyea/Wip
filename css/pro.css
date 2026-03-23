@@ -55,6 +55,7 @@
     color: var(--color-white);
 }
 
+/* Pro Features Grid */
 .pro-container {
     width: 100%;
     display: grid;
@@ -64,6 +65,7 @@
     flex-direction: row;
 }
 
+/* Pro Feature Box */
 .pro-box {
     display: flex;
     flex-direction: column;
@@ -99,6 +101,7 @@
     padding: 12px 16px 0px 12px;
 }
 
+/* Pro Members Grid */
 .pro-members-imgs {
     display: grid;
     grid-template-columns: repeat(7, 1fr);

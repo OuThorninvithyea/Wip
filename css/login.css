@@ -78,7 +78,7 @@
     border: 2px solid var(--color-border);
 }
 
-/*animation for outline*/
+/* Input Focus Animation */
 @keyframes outlineAnimation{
     0%, 80%{
         outline-color: black;
@@ -155,5 +155,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-  }}
+  }
+}
 /* Responsive */

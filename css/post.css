@@ -87,6 +87,7 @@
     justify-content: flex-start;
 }
 
+/* Post Labels */
 .post-lable {
     display: flex;
     flex-direction: row;
@@ -128,6 +129,7 @@
     padding-left: 16px;
 }
 
+/* Replies */
 .replies {
     display: flex;
     align-items: center;
@@ -141,6 +143,7 @@
     border-radius: 50%;
 }
 
+/* Reply User Hover */
 .reply-user {
     position: relative;
 }
@@ -160,6 +163,7 @@
     flex-direction: column;
 }
 
+/* Read Post Button */
 .read-post {
     font-size: 16px;
     font-weight: bold;
@@ -222,6 +226,8 @@
 /* Write Post */
 
 /* Helpful Members */
+
+/* Helpful Container */
 .helpful {
     width: 100%;
     display: flex;
@@ -245,6 +251,7 @@
     gap: 10px;
 }
 
+/* Yellow Progress Bar */
 .helpful-yellow-bg {
     display: flex;
     flex-direction: row;
